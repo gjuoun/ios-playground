@@ -22,9 +22,6 @@ struct Homework2App: App {
             ContentView()
                 .environmentObject(model)
                 .environmentObject(store)
-                .onAppear(){
-                    print("appear")
-                }
         }
     }
 }

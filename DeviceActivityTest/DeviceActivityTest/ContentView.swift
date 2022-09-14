@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import FamilyControls
 
 struct ContentView: View {
+    let center = AuthorizationCenter.shared
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,6 +19,16 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear{
+            Task {
+                do {
+                    try await center.requestAuthorization(for: .individual)
+                    print("got the permission!")
+                }catch {
+                    print("failed to enroll individual with error, \(error)")
+                }
+            }
+        }
     }
 }
 
