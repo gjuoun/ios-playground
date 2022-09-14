@@ -11,23 +11,46 @@ import FamilyControls
 struct ContentView: View {
     let center = AuthorizationCenter.shared
     
+    @State var selection = FamilyActivitySelection()
+    @State private var isDiscouragedPresented = false
+    @State private var isEncouragedPresented = false
+    
+    @EnvironmentObject var model: MyModel
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("Select Apps to Discourage") {
+                isDiscouragedPresented = true
+            }
+            .familyActivityPicker(isPresented: $isDiscouragedPresented, selection: $model.selectionToDiscourage)
+            .onChange(of: model.selectionToDiscourage) { newSelection in
+                print(newSelection)
+                
+            }
+            
+            Button("Select Apps to Encourage") {
+                isEncouragedPresented = true
+            }
+            .familyActivityPicker(isPresented: $isEncouragedPresented, selection: $model.selectionToEncourage)
+            .onChange(of: model.selectionToEncourage) { newSelection in
+                print(newSelection)
+                MySchedule.setSchedule()
+            }
+        }
+        .onChange(of: model.selectionToDiscourage) { newSelection in
+            MyModel.shared.setShieldRestrictions()
         }
         .padding()
         .onAppear{
-            Task {
-                do {
-                    try await center.requestAuthorization(for: .individual)
-                    print("got the permission!")
-                }catch {
-                    print("failed to enroll individual with error, \(error)")
-                }
-            }
+            print("loaded")
+//            Task {
+//                do {
+//                    try await center.requestAuthorization(for: .individual)
+//                    print("got the permission!")
+//                }catch {
+//                    print("failed to enroll individual with error, \(error)")
+//                }
+//            }
         }
     }
 }

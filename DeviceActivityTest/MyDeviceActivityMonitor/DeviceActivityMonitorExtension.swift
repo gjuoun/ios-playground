@@ -11,6 +11,7 @@ import DeviceActivity
 // Make sure that your class name matches the NSExtensionPrincipalClass in your Info.plist.
 class DeviceActivityMonitorExtension: DeviceActivityMonitor {
     override func intervalDidStart(for activity: DeviceActivityName) {
+        print("intervalDidStart")
         print(activity.rawValue)
         super.intervalDidStart(for: activity)
         
@@ -18,6 +19,7 @@ class DeviceActivityMonitorExtension: DeviceActivityMonitor {
     }
     
     override func intervalDidEnd(for activity: DeviceActivityName) {
+        print("intervalDidEnd")
         print(activity.rawValue)
         super.intervalDidEnd(for: activity)
         
@@ -25,6 +27,7 @@ class DeviceActivityMonitorExtension: DeviceActivityMonitor {
     }
     
     override func eventDidReachThreshold(_ event: DeviceActivityEvent.Name, activity: DeviceActivityName) {
+        print("eventDidReachThreshold")
         print(event)
         super.eventDidReachThreshold(event, activity: activity)
         

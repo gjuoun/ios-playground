@@ -14,6 +14,12 @@
 		E188D73128D17781003F994F /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E188D73028D17781003F994F /* DeviceActivity.framework */; };
 		E188D73428D17781003F994F /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188D73328D17781003F994F /* DeviceActivityMonitorExtension.swift */; };
 		E188D73928D17781003F994F /* MyDeviceActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E188D72E28D17781003F994F /* MyDeviceActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E188D74028D19052003F994F /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188D73F28D19052003F994F /* MyModel.swift */; };
+		E188D74328D1907E003F994F /* MySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188D74228D1907E003F994F /* MySchedule.swift */; };
+		E188D74B28D1A8B5003F994F /* MyDeviceActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188D74A28D1A8B5003F994F /* MyDeviceActivityReport.swift */; };
+		E188D74D28D1A8B5003F994F /* TotalActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188D74C28D1A8B5003F994F /* TotalActivityReport.swift */; };
+		E188D74F28D1A8B5003F994F /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188D74E28D1A8B5003F994F /* TotalActivityView.swift */; };
+		E188D75428D1A8B5003F994F /* MyDeviceActivityReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = E188D74828D1A8B5003F994F /* MyDeviceActivityReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +29,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = E188D72D28D17781003F994F;
 			remoteInfo = MyDeviceActivityMonitor;
+		};
+		E188D75228D1A8B5003F994F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E188D71128D17761003F994F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E188D74728D1A8B5003F994F;
+			remoteInfo = MyDeviceActivityReport;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,6 +49,17 @@
 				E188D73928D17781003F994F /* MyDeviceActivityMonitor.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E188D75828D1A8B5003F994F /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				E188D75428D1A8B5003F994F /* MyDeviceActivityReport.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -52,6 +76,14 @@
 		E188D73528D17781003F994F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E188D73628D17781003F994F /* MyDeviceActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyDeviceActivityMonitor.entitlements; sourceTree = "<group>"; };
 		E188D73E28D17A86003F994F /* DeviceActivityTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceActivityTest.entitlements; sourceTree = "<group>"; };
+		E188D73F28D19052003F994F /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
+		E188D74228D1907E003F994F /* MySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySchedule.swift; sourceTree = "<group>"; };
+		E188D74828D1A8B5003F994F /* MyDeviceActivityReport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = MyDeviceActivityReport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E188D74A28D1A8B5003F994F /* MyDeviceActivityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDeviceActivityReport.swift; sourceTree = "<group>"; };
+		E188D74C28D1A8B5003F994F /* TotalActivityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityReport.swift; sourceTree = "<group>"; };
+		E188D74E28D1A8B5003F994F /* TotalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityView.swift; sourceTree = "<group>"; };
+		E188D75028D1A8B5003F994F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E188D75128D1A8B5003F994F /* MyDeviceActivityReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyDeviceActivityReport.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +102,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E188D74528D1A8B5003F994F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +117,7 @@
 			children = (
 				E188D71B28D17761003F994F /* DeviceActivityTest */,
 				E188D73228D17781003F994F /* MyDeviceActivityMonitor */,
+				E188D74928D1A8B5003F994F /* MyDeviceActivityReport */,
 				E188D72F28D17781003F994F /* Frameworks */,
 				E188D71A28D17761003F994F /* Products */,
 			);
@@ -88,6 +128,7 @@
 			children = (
 				E188D71928D17761003F994F /* DeviceActivityTest.app */,
 				E188D72E28D17781003F994F /* MyDeviceActivityMonitor.appex */,
+				E188D74828D1A8B5003F994F /* MyDeviceActivityReport.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +140,8 @@
 				E188D71C28D17761003F994F /* DeviceActivityTestApp.swift */,
 				E188D71E28D17761003F994F /* ContentView.swift */,
 				E188D72028D17762003F994F /* Assets.xcassets */,
+				E188D73F28D19052003F994F /* MyModel.swift */,
+				E188D74228D1907E003F994F /* MySchedule.swift */,
 				E188D72228D17762003F994F /* Preview Content */,
 			);
 			path = DeviceActivityTest;
@@ -130,6 +173,18 @@
 			path = MyDeviceActivityMonitor;
 			sourceTree = "<group>";
 		};
+		E188D74928D1A8B5003F994F /* MyDeviceActivityReport */ = {
+			isa = PBXGroup;
+			children = (
+				E188D74A28D1A8B5003F994F /* MyDeviceActivityReport.swift */,
+				E188D74C28D1A8B5003F994F /* TotalActivityReport.swift */,
+				E188D74E28D1A8B5003F994F /* TotalActivityView.swift */,
+				E188D75028D1A8B5003F994F /* Info.plist */,
+				E188D75128D1A8B5003F994F /* MyDeviceActivityReport.entitlements */,
+			);
+			path = MyDeviceActivityReport;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,11 +196,13 @@
 				E188D71628D17761003F994F /* Frameworks */,
 				E188D71728D17761003F994F /* Resources */,
 				E188D73D28D17781003F994F /* Embed Foundation Extensions */,
+				E188D75828D1A8B5003F994F /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				E188D73828D17781003F994F /* PBXTargetDependency */,
+				E188D75328D1A8B5003F994F /* PBXTargetDependency */,
 			);
 			name = DeviceActivityTest;
 			productName = DeviceActivityTest;
@@ -169,6 +226,23 @@
 			productReference = E188D72E28D17781003F994F /* MyDeviceActivityMonitor.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		E188D74728D1A8B5003F994F /* MyDeviceActivityReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E188D75528D1A8B5003F994F /* Build configuration list for PBXNativeTarget "MyDeviceActivityReport" */;
+			buildPhases = (
+				E188D74428D1A8B5003F994F /* Sources */,
+				E188D74528D1A8B5003F994F /* Frameworks */,
+				E188D74628D1A8B5003F994F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDeviceActivityReport;
+			productName = MyDeviceActivityReport;
+			productReference = E188D74828D1A8B5003F994F /* MyDeviceActivityReport.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,6 +257,9 @@
 						CreatedOnToolsVersion = 14.0;
 					};
 					E188D72D28D17781003F994F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					E188D74728D1A8B5003F994F = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -202,6 +279,7 @@
 			targets = (
 				E188D71828D17761003F994F /* DeviceActivityTest */,
 				E188D72D28D17781003F994F /* MyDeviceActivityMonitor */,
+				E188D74728D1A8B5003F994F /* MyDeviceActivityReport */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +301,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E188D74628D1A8B5003F994F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -231,6 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E188D71F28D17761003F994F /* ContentView.swift in Sources */,
+				E188D74028D19052003F994F /* MyModel.swift in Sources */,
+				E188D74328D1907E003F994F /* MySchedule.swift in Sources */,
 				E188D71D28D17761003F994F /* DeviceActivityTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +330,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E188D74428D1A8B5003F994F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E188D74F28D1A8B5003F994F /* TotalActivityView.swift in Sources */,
+				E188D74B28D1A8B5003F994F /* MyDeviceActivityReport.swift in Sources */,
+				E188D74D28D1A8B5003F994F /* TotalActivityReport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -250,6 +347,11 @@
 			isa = PBXTargetDependency;
 			target = E188D72D28D17781003F994F /* MyDeviceActivityMonitor */;
 			targetProxy = E188D73728D17781003F994F /* PBXContainerItemProxy */;
+		};
+		E188D75328D1A8B5003F994F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E188D74728D1A8B5003F994F /* MyDeviceActivityReport */;
+			targetProxy = E188D75228D1A8B5003F994F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -482,6 +584,60 @@
 			};
 			name = Release;
 		};
+		E188D75628D1A8B5003F994F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyDeviceActivityReport/MyDeviceActivityReport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YM3NL74Z7F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyDeviceActivityReport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyDeviceActivityReport;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mistplay.dev.DeviceActivityTest.MyDeviceActivityReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E188D75728D1A8B5003F994F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyDeviceActivityReport/MyDeviceActivityReport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YM3NL74Z7F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyDeviceActivityReport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyDeviceActivityReport;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mistplay.dev.DeviceActivityTest.MyDeviceActivityReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -508,6 +664,15 @@
 			buildConfigurations = (
 				E188D73B28D17781003F994F /* Debug */,
 				E188D73C28D17781003F994F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E188D75528D1A8B5003F994F /* Build configuration list for PBXNativeTarget "MyDeviceActivityReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E188D75628D1A8B5003F994F /* Debug */,
+				E188D75728D1A8B5003F994F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

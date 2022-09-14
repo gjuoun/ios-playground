@@ -57,8 +57,12 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "1"
+         BundleIdentifier = "com.google.ios.youtube"
+         RemotePath = "/var/containers/Bundle/Application/339A3ED6-E3DF-4E17-87CD-1D8A818F296A/YouTube.app">
+      </RemoteRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E188D71828D17761003F994F"
@@ -66,7 +70,7 @@
             BlueprintName = "DeviceActivityTest"
             ReferencedContainer = "container:DeviceActivityTest.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
