@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     
     @ObservedObject var networkManager = NetworkManager()
@@ -16,10 +17,9 @@ struct ContentView: View {
         NavigationView {
             
             List(networkManager.posts){ post in
-                NavigationLink( ){
-                    
+                NavigationLink( destination: DetailsView(post: post) ){
+                    Item(post: post)
                 }
-                Item(post: post)
             }.onAppear{
                 networkManager.fetchData()
             }

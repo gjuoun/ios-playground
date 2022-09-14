@@ -7,28 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E132210B28D1038400833BAE /* HackNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132210A28D1038400833BAE /* HackNewsApp.swift */; };
-		E132210D28D1038400833BAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132210C28D1038400833BAE /* ContentView.swift */; };
-		E132210F28D1038600833BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E132210E28D1038600833BAE /* Assets.xcassets */; };
-		E132211228D1038600833BAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E132211128D1038600833BAE /* Preview Assets.xcassets */; };
-		E132211A28D1080000833BAE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132211928D1080000833BAE /* NetworkManager.swift */; };
-		E132211C28D1091000833BAE /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132211B28D1091000833BAE /* PostData.swift */; };
-		E132212128D125C900833BAE /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132212028D125C900833BAE /* DetailsView.swift */; };
+		E188D71D28D17761003F994F /* DeviceActivityTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188D71C28D17761003F994F /* DeviceActivityTestApp.swift */; };
+		E188D71F28D17761003F994F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188D71E28D17761003F994F /* ContentView.swift */; };
+		E188D72128D17762003F994F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E188D72028D17762003F994F /* Assets.xcassets */; };
+		E188D72428D17762003F994F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E188D72328D17762003F994F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E132210728D1038400833BAE /* HackNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E132210A28D1038400833BAE /* HackNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackNewsApp.swift; sourceTree = "<group>"; };
-		E132210C28D1038400833BAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E132210E28D1038600833BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E132211128D1038600833BAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E132211928D1080000833BAE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		E132211B28D1091000833BAE /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
-		E132212028D125C900833BAE /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		E188D71928D17761003F994F /* DeviceActivityTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceActivityTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E188D71C28D17761003F994F /* DeviceActivityTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityTestApp.swift; sourceTree = "<group>"; };
+		E188D71E28D17761003F994F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E188D72028D17762003F994F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E188D72328D17762003F994F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E132210428D1038400833BAE /* Frameworks */ = {
+		E188D71628D17761003F994F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,96 +32,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E13220FE28D1038400833BAE = {
+		E188D71028D17761003F994F = {
 			isa = PBXGroup;
 			children = (
-				E132210928D1038400833BAE /* HackNews */,
-				E132210828D1038400833BAE /* Products */,
+				E188D71B28D17761003F994F /* DeviceActivityTest */,
+				E188D71A28D17761003F994F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E132210828D1038400833BAE /* Products */ = {
+		E188D71A28D17761003F994F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E132210728D1038400833BAE /* HackNews.app */,
+				E188D71928D17761003F994F /* DeviceActivityTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E132210928D1038400833BAE /* HackNews */ = {
+		E188D71B28D17761003F994F /* DeviceActivityTest */ = {
 			isa = PBXGroup;
 			children = (
-				E132211D28D1259A00833BAE /* Views */,
-				E132210A28D1038400833BAE /* HackNewsApp.swift */,
-				E132211828D107EF00833BAE /* Model */,
-				E132210E28D1038600833BAE /* Assets.xcassets */,
-				E132211028D1038600833BAE /* Preview Content */,
+				E188D71C28D17761003F994F /* DeviceActivityTestApp.swift */,
+				E188D71E28D17761003F994F /* ContentView.swift */,
+				E188D72028D17762003F994F /* Assets.xcassets */,
+				E188D72228D17762003F994F /* Preview Content */,
 			);
-			path = HackNews;
+			path = DeviceActivityTest;
 			sourceTree = "<group>";
 		};
-		E132211028D1038600833BAE /* Preview Content */ = {
+		E188D72228D17762003F994F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				E132211128D1038600833BAE /* Preview Assets.xcassets */,
+				E188D72328D17762003F994F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		E132211828D107EF00833BAE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				E132211928D1080000833BAE /* NetworkManager.swift */,
-				E132211B28D1091000833BAE /* PostData.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E132211D28D1259A00833BAE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				E132210C28D1038400833BAE /* ContentView.swift */,
-				E132212028D125C900833BAE /* DetailsView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E132210628D1038400833BAE /* HackNews */ = {
+		E188D71828D17761003F994F /* DeviceActivityTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E132211528D1038600833BAE /* Build configuration list for PBXNativeTarget "HackNews" */;
+			buildConfigurationList = E188D72728D17762003F994F /* Build configuration list for PBXNativeTarget "DeviceActivityTest" */;
 			buildPhases = (
-				E132210328D1038400833BAE /* Sources */,
-				E132210428D1038400833BAE /* Frameworks */,
-				E132210528D1038400833BAE /* Resources */,
+				E188D71528D17761003F994F /* Sources */,
+				E188D71628D17761003F994F /* Frameworks */,
+				E188D71728D17761003F994F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HackNews;
-			productName = HackNews;
-			productReference = E132210728D1038400833BAE /* HackNews.app */;
+			name = DeviceActivityTest;
+			productName = DeviceActivityTest;
+			productReference = E188D71928D17761003F994F /* DeviceActivityTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E13220FF28D1038400833BAE /* Project object */ = {
+		E188D71128D17761003F994F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					E132210628D1038400833BAE = {
+					E188D71828D17761003F994F = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
 			};
-			buildConfigurationList = E132210228D1038400833BAE /* Build configuration list for PBXProject "HackNews" */;
+			buildConfigurationList = E188D71428D17761003F994F /* Build configuration list for PBXProject "DeviceActivityTest" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,45 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = E13220FE28D1038400833BAE;
-			productRefGroup = E132210828D1038400833BAE /* Products */;
+			mainGroup = E188D71028D17761003F994F;
+			productRefGroup = E188D71A28D17761003F994F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E132210628D1038400833BAE /* HackNews */,
+				E188D71828D17761003F994F /* DeviceActivityTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E132210528D1038400833BAE /* Resources */ = {
+		E188D71728D17761003F994F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E132211228D1038600833BAE /* Preview Assets.xcassets in Resources */,
-				E132210F28D1038600833BAE /* Assets.xcassets in Resources */,
+				E188D72428D17762003F994F /* Preview Assets.xcassets in Resources */,
+				E188D72128D17762003F994F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E132210328D1038400833BAE /* Sources */ = {
+		E188D71528D17761003F994F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E132211A28D1080000833BAE /* NetworkManager.swift in Sources */,
-				E132212128D125C900833BAE /* DetailsView.swift in Sources */,
-				E132211C28D1091000833BAE /* PostData.swift in Sources */,
-				E132210D28D1038400833BAE /* ContentView.swift in Sources */,
-				E132210B28D1038400833BAE /* HackNewsApp.swift in Sources */,
+				E188D71F28D17761003F994F /* ContentView.swift in Sources */,
+				E188D71D28D17761003F994F /* DeviceActivityTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E132211328D1038600833BAE /* Debug */ = {
+		E188D72528D17762003F994F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -233,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		E132211428D1038600833BAE /* Release */ = {
+		E188D72628D17762003F994F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -287,15 +259,15 @@
 			};
 			name = Release;
 		};
-		E132211628D1038600833BAE /* Debug */ = {
+		E188D72828D17762003F994F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HackNews/Preview Content\"";
-				DEVELOPMENT_TEAM = 7C9P96SMH2;
+				DEVELOPMENT_ASSET_PATHS = "\"DeviceActivityTest/Preview Content\"";
+				DEVELOPMENT_TEAM = YM3NL74Z7F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -303,13 +275,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ca.bigface.HackNews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mistplay.dev.DeviceActivityTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,15 +288,15 @@
 			};
 			name = Debug;
 		};
-		E132211728D1038600833BAE /* Release */ = {
+		E188D72928D17762003F994F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HackNews/Preview Content\"";
-				DEVELOPMENT_TEAM = 7C9P96SMH2;
+				DEVELOPMENT_ASSET_PATHS = "\"DeviceActivityTest/Preview Content\"";
+				DEVELOPMENT_TEAM = YM3NL74Z7F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -333,13 +304,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ca.bigface.HackNews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mistplay.dev.DeviceActivityTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -350,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E132210228D1038400833BAE /* Build configuration list for PBXProject "HackNews" */ = {
+		E188D71428D17761003F994F /* Build configuration list for PBXProject "DeviceActivityTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E132211328D1038600833BAE /* Debug */,
-				E132211428D1038600833BAE /* Release */,
+				E188D72528D17762003F994F /* Debug */,
+				E188D72628D17762003F994F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E132211528D1038600833BAE /* Build configuration list for PBXNativeTarget "HackNews" */ = {
+		E188D72728D17762003F994F /* Build configuration list for PBXNativeTarget "DeviceActivityTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E132211628D1038600833BAE /* Debug */,
-				E132211728D1038600833BAE /* Release */,
+				E188D72828D17762003F994F /* Debug */,
+				E188D72928D17762003F994F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E13220FF28D1038400833BAE /* Project object */;
+	rootObject = E188D71128D17761003F994F /* Project object */;
 }
