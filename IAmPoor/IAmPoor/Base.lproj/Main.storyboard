@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,32 +11,55 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IAmPoor" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I Am Not Poor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10T-4O-KJ4">
-                                <rect key="frame" x="68" y="167" width="254" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="qw2-iT-kLB">
+                                <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Not Poor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10T-4O-KJ4">
+                                <rect key="frame" x="336" y="7" width="254" height="47"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.52156862749999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="emerald" translatesAutoresizingMaskIntoConstraints="NO" id="6gn-WU-eAG">
-                                <rect key="frame" x="5" y="222" width="380" height="380"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-DU-Z0e">
+                                <rect key="frame" x="314" y="64" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7c5-Tf-yES"/>
+                                    <constraint firstAttribute="height" constant="300" id="KOa-7B-QKv"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="emerald"/>
+                                <connections>
+                                    <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HzH-tv-J9c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qw2-iT-kLB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="SnF-Bi-QOs"/>
+                            <constraint firstItem="xcc-DU-Z0e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZAC-rv-qkF"/>
+                            <constraint firstItem="xcc-DU-Z0e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="in0-hV-TVp"/>
+                            <constraint firstItem="10T-4O-KJ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mvs-2J-uxP"/>
+                            <constraint firstItem="qw2-iT-kLB" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="rvR-dp-gAW"/>
+                            <constraint firstItem="qw2-iT-kLB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vb2-z2-QWd"/>
+                            <constraint firstItem="qw2-iT-kLB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vkq-o7-flE"/>
+                            <constraint firstItem="xcc-DU-Z0e" firstAttribute="top" secondItem="10T-4O-KJ4" secondAttribute="bottom" constant="10" id="xVS-Kb-rqV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageButton" destination="xcc-DU-Z0e" id="lTF-5E-y0s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-28"/>
+            <point key="canvasLocation" x="130.43478260869566" y="-28.794642857142854"/>
         </scene>
     </scenes>
     <resources>
+        <image name="background_1" width="640" height="1136"/>
         <image name="emerald" width="800" height="1000"/>
     </resources>
 </document>
