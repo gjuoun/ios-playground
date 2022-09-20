@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E1D245F128D404A100B9881C /* ImageViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D245F128D404A100B9881C /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D245F428D404A100B9881C /* ImageViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerApp.swift; sourceTree = "<group>"; };
 		E1D245F628D404A100B9881C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1D245F828D404A200B9881C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		E1D245F228D404A100B9881C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E1D245F128D404A100B9881C /* ImageViewer.app */,
+				E1D245F128D404A100B9881C /* WeSplit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E1D245F028D404A100B9881C /* ImageViewer */ = {
+		E1D245F028D404A100B9881C /* WeSplit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1D245FF28D404A200B9881C /* Build configuration list for PBXNativeTarget "ImageViewer" */;
+			buildConfigurationList = E1D245FF28D404A200B9881C /* Build configuration list for PBXNativeTarget "WeSplit" */;
 			buildPhases = (
 				E1D245ED28D404A100B9881C /* Sources */,
 				E1D245EE28D404A100B9881C /* Frameworks */,
@@ -121,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = ImageViewer;
+			name = WeSplit;
 			productName = ImageViewer;
-			productReference = E1D245F128D404A100B9881C /* ImageViewer.app */;
+			productReference = E1D245F128D404A100B9881C /* WeSplit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E1D245EC28D404A100B9881C /* Build configuration list for PBXProject "ImageViewer" */;
+			buildConfigurationList = E1D245EC28D404A100B9881C /* Build configuration list for PBXProject "WeSplit" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -154,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1D245F028D404A100B9881C /* ImageViewer */,
+				E1D245F028D404A100B9881C /* WeSplit */,
 			);
 		};
 /* End PBXProject section */
@@ -369,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E1D245EC28D404A100B9881C /* Build configuration list for PBXProject "ImageViewer" */ = {
+		E1D245EC28D404A100B9881C /* Build configuration list for PBXProject "WeSplit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1D245FD28D404A200B9881C /* Debug */,
@@ -378,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1D245FF28D404A200B9881C /* Build configuration list for PBXNativeTarget "ImageViewer" */ = {
+		E1D245FF28D404A200B9881C /* Build configuration list for PBXNativeTarget "WeSplit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1D2460028D404A200B9881C /* Debug */,
