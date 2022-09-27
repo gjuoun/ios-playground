@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E1CC525228DBB3F600094FD4 /* UrlSchemeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrlSchemeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CC525228DBB3F600094FD4 /* app1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CC525528DBB3F600094FD4 /* UrlSchemeTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSchemeTestApp.swift; sourceTree = "<group>"; };
 		E1CC525728DBB3F600094FD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1CC525928DBB3F700094FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		E1CC525328DBB3F600094FD4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E1CC525228DBB3F600094FD4 /* UrlSchemeTest.app */,
+				E1CC525228DBB3F600094FD4 /* app1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,9 +72,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E1CC525128DBB3F600094FD4 /* UrlSchemeTest */ = {
+		E1CC525128DBB3F600094FD4 /* app1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1CC526028DBB3F700094FD4 /* Build configuration list for PBXNativeTarget "UrlSchemeTest" */;
+			buildConfigurationList = E1CC526028DBB3F700094FD4 /* Build configuration list for PBXNativeTarget "app1" */;
 			buildPhases = (
 				E1CC524E28DBB3F600094FD4 /* Sources */,
 				E1CC524F28DBB3F600094FD4 /* Frameworks */,
@@ -84,9 +84,9 @@
 			);
 			dependencies = (
 			);
-			name = UrlSchemeTest;
+			name = app1;
 			productName = UrlSchemeTest;
-			productReference = E1CC525228DBB3F600094FD4 /* UrlSchemeTest.app */;
+			productReference = E1CC525228DBB3F600094FD4 /* app1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E1CC524D28DBB3F600094FD4 /* Build configuration list for PBXProject "UrlSchemeTest" */;
+			buildConfigurationList = E1CC524D28DBB3F600094FD4 /* Build configuration list for PBXProject "app1" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1CC525128DBB3F600094FD4 /* UrlSchemeTest */,
+				E1CC525128DBB3F600094FD4 /* app1 */,
 			);
 		};
 /* End PBXProject section */
@@ -326,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E1CC524D28DBB3F600094FD4 /* Build configuration list for PBXProject "UrlSchemeTest" */ = {
+		E1CC524D28DBB3F600094FD4 /* Build configuration list for PBXProject "app1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1CC525E28DBB3F700094FD4 /* Debug */,
@@ -335,7 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1CC526028DBB3F700094FD4 /* Build configuration list for PBXNativeTarget "UrlSchemeTest" */ = {
+		E1CC526028DBB3F700094FD4 /* Build configuration list for PBXNativeTarget "app1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1CC526128DBB3F700094FD4 /* Debug */,
